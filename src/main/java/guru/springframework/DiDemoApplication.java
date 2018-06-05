@@ -10,7 +10,7 @@ public class DiDemoApplication {
 
 	public static void main(String[] args) {
 		ApplicationContext ctx=SpringApplication.run(DiDemoApplication.class, args);
-		MyController myController=ctx.getBean("myController",MyController.class);
-		myController.hello();
+		MyController controller=ctx.getBean("myController",MyController.class);
+		controller.hello();
 	}
 }
